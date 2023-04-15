@@ -45,14 +45,14 @@
 
 
             <label for="branch">Required Branch:</label>
-            <input type="checkbox" name="branch" value="CSE"> CSE<br>
-            <input type="checkbox" name="branch" value="AIDS"> AIDS<br>
-            <input type="checkbox" name="branch" value="MNC"> MNC<br>
-            <input type="checkbox" name="branch" value="EEE"> EEE<br>
-            <input type="checkbox" name="branch" value="CBE"> CBE<br>
-            <input type="checkbox" name="branch" value="CE"> CE<br>
-            <input type="checkbox" name="branch" value="ME"> ME<br>
-            <input type="checkbox" name="branch" value="ME"> MME<br>
+            <input type="checkbox" name="branch0" value="CSE"> CSE<br></input>
+            <input type="checkbox" name="branch1" value="AIDS"> AIDS<br></input>
+            <input type="checkbox" name="branch2" value="MNC"> MNC<br></input>
+            <input type="checkbox" name="branch3" value="EEE"> EEE<br></input>
+            <input type="checkbox" name="branch4" value="CBE"> CBE<br></input>
+            <input type="checkbox" name="branch5" value="CE"> CE<br></input>
+            <input type="checkbox" name="branch6" value="ME"> ME<br></input>
+            <input type="checkbox" name="branch7" value="MME"> MME<br></input>
 
 
             <br>
@@ -67,10 +67,10 @@
             <label>Mode Of Interview:</label>
             <input type="radio" id="m" value="offline" name="moi" checked="checked"><label for="m" class="light">Offline</label><br>
             <input type="radio" id="f" value="online" name="moi"><label for="f" class="light">Online</label><br>
-
-            <label>Type Of Interview:</label>
+            <br>
+            <label>Type Of Selection:</label>
             <input type="radio" id="m" value="Written" name="toi" checked="checked"><label for="m" class="light">Written</label><br>
-            <input type="radio" id="f" value="Objective" name="toi"><label for="f" class="light">Objective</label><br>
+            <input type="radio" id="f" value="Interview" name="toi"><label for="f" class="light">Interview</label><br>
 
             <br>
             <label for="ctc">CTC Range(in LPA):</label>

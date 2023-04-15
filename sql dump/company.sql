@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 15, 2023 at 10:39 AM
+-- Generation Time: Apr 16, 2023 at 01:32 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.0.25
 
@@ -20,6 +20,25 @@ SET time_zone = "+00:00";
 --
 -- Database: `company`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `application`
+--
+
+CREATE TABLE `application` (
+  `jid` int(11) NOT NULL,
+  `roll` varchar(10) NOT NULL,
+  `date` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `application`
+--
+
+INSERT INTO `application` (`jid`, `roll`, `date`) VALUES
+(34, '2101CS43', '2023-04-15');
 
 -- --------------------------------------------------------
 
@@ -70,8 +89,22 @@ CREATE TABLE `jobpost` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
+-- Dumping data for table `jobpost`
+--
+
+INSERT INTO `jobpost` (`jid`, `cid`, `name`, `phone`, `email`, `position`, `branch`, `minq`, `minm`, `moi`, `toi`, `ctc`, `date`) VALUES
+(34, 4, 'Martin', 2147483647, 'mkp@gmail.com', 'sdsdsdsdds', ' , CSE , MNC , EEE , ME , MME', 1, 1, 'offline', 'Written', 88, '2023-04-15');
+
+--
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `application`
+--
+ALTER TABLE `application`
+  ADD KEY `student_fk1` (`roll`),
+  ADD KEY `job_post_fk` (`jid`);
 
 --
 -- Indexes for table `company`
@@ -100,11 +133,18 @@ ALTER TABLE `company`
 -- AUTO_INCREMENT for table `jobpost`
 --
 ALTER TABLE `jobpost`
-  MODIFY `jid` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `jid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- Constraints for dumped tables
 --
+
+--
+-- Constraints for table `application`
+--
+ALTER TABLE `application`
+  ADD CONSTRAINT `job_post_fk` FOREIGN KEY (`jid`) REFERENCES `jobpost` (`jid`),
+  ADD CONSTRAINT `student_fk1` FOREIGN KEY (`roll`) REFERENCES `student`.`student` (`roll`);
 
 --
 -- Constraints for table `jobpost`

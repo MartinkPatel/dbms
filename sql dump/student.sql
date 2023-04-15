@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 14, 2023 at 09:03 PM
+-- Generation Time: Apr 16, 2023 at 01:31 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.0.25
 
@@ -48,7 +48,32 @@ CREATE TABLE `acad` (
 --
 
 INSERT INTO `acad` (`roll`, `10th`, `11th`, `12th`, `csem`, `sem1`, `sem2`, `sem3`, `sem4`, `sem5`, `sem6`, `sem7`, `sem8`) VALUES
-('2101CS43', 95, 95, 95, 8, 8, 8, 8, 8, 8, 7, 8, 8);
+('2101CS43', 95, 95, 95, 8, 8, 8, 8, 8, 8, 7, 8, 8),
+('2101CS69', 95, 95, 95, 8, 8, 8, 1, 8, 8, 7, 8, 8),
+('2101ss44', 9, 9, 9, 8, 9, 9, 9, 9, 9, 9, 9, 9);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `announcement`
+--
+
+CREATE TABLE `announcement` (
+  `aid` int(11) NOT NULL,
+  `name` text NOT NULL,
+  `date` date NOT NULL,
+  `msg` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `announcement`
+--
+
+INSERT INTO `announcement` (`aid`, `name`, `date`, `msg`) VALUES
+(1, 'admin', '2023-04-15', 'test 0'),
+(2, 'admin', '2023-04-15', 'test 0'),
+(3, 'admin2', '2023-04-07', 'test 1'),
+(4, 'admin2', '2023-04-07', 'test 1');
 
 -- --------------------------------------------------------
 
@@ -76,7 +101,9 @@ CREATE TABLE `student` (
 --
 
 INSERT INTO `student` (`roll`, `name`, `dob`, `specialization`, `phone`, `email`, `password`, `gender`, `ccpi`, `aoi`, `bio`, `verify`) VALUES
-('2101CS43', 'Martin', '2023-04-01', 'CSE', 2147483647, 'mkp@gmail.com', '1234', 'm', 8, 'ada', 'sdssd', 0);
+('2101CS43', 'Martin', '2023-04-01', 'CSE', 2147483647, 'mkp@gmail.com', '1234', 'm', 1, 'sdsdds', '                ada                ', 1),
+('2101CS69', 'Sahil', '2023-03-29', 'CSE', 2147483647, 'skasdssk@gmail.com', 'Sahil@1234', 'm', 8, '                                sdsd                                ', '                                sdsd                                ', 1),
+('2101ss44', 'asdss', '2023-04-05', 'CSE', 2147483647, 'mjp@gmail.com', 'Admin@1234', 'm', 9, '                                sdsdsdsd                                ', '                                sdsdsdsd                                ', 1);
 
 --
 -- Indexes for dumped tables
@@ -89,10 +116,26 @@ ALTER TABLE `acad`
   ADD PRIMARY KEY (`roll`);
 
 --
+-- Indexes for table `announcement`
+--
+ALTER TABLE `announcement`
+  ADD PRIMARY KEY (`aid`);
+
+--
 -- Indexes for table `student`
 --
 ALTER TABLE `student`
   ADD PRIMARY KEY (`roll`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `announcement`
+--
+ALTER TABLE `announcement`
+  MODIFY `aid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

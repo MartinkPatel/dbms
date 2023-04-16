@@ -62,10 +62,10 @@ if (isset($_POST["Submit"])) {
         <input type="password" id="pass" name="pass" required><br><br>
 
         <button type="submit" value="Login" name="Submit">Login</button>
-        <p class="top">No credentials yet? <a href="index.php">Register</a>
+        <button onclick="location.href='http://localhost/project/'" type="button">Home</button>
+        <p class="top">No credentials yet? <a href='http://localhost/project/sRegister/'>Register</a></p>
     </fieldset>
 </form>
-</p>
 </body>
 
 

@@ -13,7 +13,7 @@
 				<h1>IIT Patna Placement Portal</h1>
 			</div>
 			<ul class="nav-links">
-				<li><a href="#">Home</a></li>
+				<li><a href="index.php">Home</a></li>
 				<li><a href="slogin/">Student Login</a></li>
 				<li><a href="clogin/index3.php">Company Login</a></li>
 				<li><a href="alogin/">Admin Login</a></li>

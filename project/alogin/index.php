@@ -62,6 +62,7 @@ if (isset($_POST["Submit"])) {
         <input type="password" id="pass" name="pass" required><br><br>
 
         <button type="submit" value="Login" name="Submit">Login</button>
+        <button onclick="location.href='http://localhost/project/index.php'" type="button">Home</button>
 
     </fieldset>
 </form>

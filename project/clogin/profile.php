@@ -77,11 +77,9 @@ $eo = $row["size"]
         <input type="text" id="size" name="size" value=<?php echo $eo; ?> readonly>
         <label for="ctc">CTC Expected(in Lakhs):</label>
         <input type="text" id="ctc" name="ctc" value=<?php echo $ctc; ?> readonly>
-
       </fieldset>
-
+      <p class="top"><a href='http://localhost/project/cLogin/chomepage.php'>Go Back</a></p>
       <!-- <button onclick="location.href='http://localhost/project/sHomepage/'" type="button">Homepage</button> -->
-
 
   </form>
   <!-- <button onclick="alert('Click here to go there!'); window.location.href = '/project/clogin/chomepage.php'">Click Me</button> -->

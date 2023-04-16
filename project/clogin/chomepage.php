@@ -54,17 +54,16 @@ $_SESSION['cid'] = $id;
 			<link rel="stylesheet" href="css/main.css">
 		</head>
 		<fieldset>
-			<p class="top"><br>
+			<p class="top">
 				<button onclick="location.href='http://localhost/project/clogin/profile.php'" type="button">Profile Details</button>
 			<p class="top">
 				<be>
 					<button onclick="location.href='http://localhost/project/jobpost/'" type="button">Post for openings</button>
-					<p class="top"><br>
+					<p class="top">
 						<button onclick="location.href='http://localhost/project/clogin/statistics.php'" type="button">Check statistics</button>
-					<p class="top"><br>
+					<p class="top">
 						<button onclick="location.href='http://localhost/project/clogin/logout.php'" type="button">Log out</button>
-					<p class="top"><br>
-
+					<p class="top">
 					</p>
 		</fieldset>
 	</center>

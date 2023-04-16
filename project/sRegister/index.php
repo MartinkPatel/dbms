@@ -266,6 +266,7 @@
 				</fieldset>
 
 				<button type="submit" value="submit">Sign Up</button>
+				<button onclick="location.href='http://localhost/project/index.php'" type="button">Home</button>
 		</form>
 
 	</body>

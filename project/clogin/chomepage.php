@@ -11,7 +11,7 @@ $result = mysqli_query($connect, "select * from company where email = '$email'")
 $row = mysqli_fetch_array($result);
 $name = $row["name"];
 $id = $row["cid"];
-
+$_SESSION['cid'] = $id;
 ?>
 <!DOCTYPE html>
 <html>
@@ -58,7 +58,7 @@ $id = $row["cid"];
 				<button onclick="location.href='http://localhost/project/clogin/profile.php'" type="button">Profile Details</button>
 			<p class="top">
 				<be>
-					<button onclick="location.href='http://localhost/project/clogin/job_post.php'" type="button">Post for openings</button>
+					<button onclick="location.href='http://localhost/project/jobpost/'" type="button">Post for openings</button>
 					<p class="top"><br>
 						<button onclick="location.href='http://localhost/project/clogin/statistics.php'" type="button">Check statistics</button>
 					<p class="top"><br>

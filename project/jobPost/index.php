@@ -12,6 +12,13 @@
 
 <body>
 
+
+    <?php
+    session_start();
+    $cid = $_SESSION['cid'];
+
+    ?>
+
     <form action="process.php" method="post">
 
         <h1>Job Posting</h1>
@@ -19,7 +26,7 @@
         <fieldset>
             <legend><span class="number">1</span>Your basic info</legend>
             <label for="cid">Comapy Id:</label>
-            <input type="number" id="cid" name="cid" required>
+            <input type="number" id="cid" name="cid" value="<?php echo $cid; ?>" required>
 
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
@@ -60,7 +67,7 @@
             <input type="number" id="minq" name="minq" min="1" max="8" value="7" required>
 
             <label for="minm">Minimum Marks Criteria (CPI - 0 to 10):</label>
-            <input type="number" id="minm" name="minm" min="1" max="8" step="any" required>
+            <input type="number" id="minm" name="minm" min="1" max="10" step="any" required>
 
 
 
@@ -223,7 +230,8 @@
 
 
 
-        <button type="submit" value="submit">Sign Up</button>
+        <button type="submit" value="submit">Post Job</button>
+        <button onclick=location.href='http://localhost/project/clogin/chomepage.php' type='button'>Go to Homepage</button>
     </form>
 
 

@@ -48,6 +48,7 @@
         <button onclick="location.href='http://localhost/project/sHomepage/jobcheck.php'" type="button">Check Applied Jobs</button>
         <button onclick="location.href='http://localhost/project/sHomepage/profile.php'" type="button">Show Profile</button>
         <button onclick="location.href='http://localhost/project/sHomepage/ann.php'" type="button">Announcement</button>
+        <button onclick="location.href='http://localhost/project/sHomepage/logout.php'" type="button">Logout</button>
 
 
     </fieldset>

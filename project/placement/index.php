@@ -3,56 +3,56 @@
 
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Placement Details</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Placement Details</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <?php
-    session_start();
-    include 'database.php';
+	<?php
+	session_start();
+	include 'database.php';
 
-    $roll = $_SESSION['roll'];
-    $name = $_SESSION['name'];
+	$roll = $_SESSION['roll'];
+	$name = $_SESSION['name'];
 
 
 
-    ?>
+	?>
 
-    <form action="process.php" method="post">
+	<form action="process.php" method="post">
 
-        <h1>Placement Status</h1>
+		<h1>Placement Status</h1>
 
-        <fieldset>
-            <legend><span class="number">1</span>Job Details</legend>
-            <label for="roll">Roll number:</label>
-            <input type="text" id="roll" name="roll" value="<?php echo $roll; ?>" readonly required>
+		<fieldset>
+			<legend><span class="number">1</span>Job Details</legend>
+			<label for="roll">Roll number:</label>
+			<input type="text" id="roll" name="roll" value="<?php echo $roll; ?>" readonly required>
 
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" value="<?php echo $name; ?>" readonly required>
-            <label for="jid">Job ID:</label>
-            <input type="number" id="jid" name="jid" required>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" value="<?php echo $name; ?>" readonly required>
+			<label for="jid">Job ID:</label>
+			<input type="number" id="jid" name="jid" required>
 
-            <label for="company">Company:</label>
-            <input type="text" id="company" name="company" required>
+			<label for="company">Company:</label>
+			<input type="text" id="company" name="company" required>
 
-            <label for="position">Position:</label>
-            <input type="text" id="position" name="position" required>
+			<label for="position">Position:</label>
+			<input type="text" id="position" name="position" required>
 
-            <label for="ctc">CTC (in LPA):</label>
-            <input type="number" id="ctc" name="ctc" step="any" required>
+			<label for="ctc">CTC (in LPA):</label>
+			<input type="number" id="ctc" name="ctc" step="any" required>
 
-            <label for="date">Date Of Placement:</label>
-            <input type="date" id="date" name="date" required>
+			<label for="date">Date Of Placement:</label>
+			<input type="date" id="date" name="date" required>
 
-        </fieldset>
+		</fieldset>
 
-        <!-- <fieldset>
+		<!-- <fieldset>
 				<legend><span class="number">2</span>Your Skills(Rate Yourself)</legend>
 				<label for="skills">C:</label>
 				<select id="c" name="c">
@@ -192,7 +192,7 @@
 
 			</fieldset> -->
 
-        <!-- <fieldset>
+		<!-- <fieldset>
             <legend><span class="number">2</span>Academics</legend>
             <label for="Xth">10th(percentage):</label>
             <input type="number" step="any" id="Xth" name="Xth" min="0" max="100" required>
@@ -236,7 +236,7 @@
 
 
 
-        <!-- <fieldset>
+		<!-- <fieldset>
 
                 <legend><span class="number">3</span>About Yourself</legend>
                 <label for="aoi">Area Of Interest:</label>
@@ -245,8 +245,9 @@
                 <textarea id="bio" name="bio"></textarea>
             </fieldset> -->
 
-        <button type="submit" value="submit">Update Placement Status</button>
-    </form>
+		<button type="submit" value="submit">Update Placement Status</button>
+		<a href="http://localhost/project/sHomepage/">Go Back!</a>
+	</form>
 
 </body>
 

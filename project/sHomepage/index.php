@@ -32,7 +32,7 @@
     $roll = $row[1];
 
     $_SESSION['roll'] = $roll;
-
+    $_SESSION['name'] = $name;
 
     ?>
 
@@ -47,6 +47,8 @@
         <button onclick="location.href='http://localhost/project/sHomepage/jobpost.php'" type="button">Check Available Jobs</button>
         <button onclick="location.href='http://localhost/project/sHomepage/jobcheck.php'" type="button">Check Applied Jobs</button>
         <button onclick="location.href='http://localhost/project/sHomepage/profile.php'" type="button">Show Profile</button>
+        <button onclick="location.href='http://localhost/project/sHomepage/cplacement.php'" type="button">Check Placement Details</button>
+        <button onclick="location.href='http://localhost/project/placement/'" type="button">Update Placement Details</button>
         <button onclick="location.href='http://localhost/project/sHomepage/ann.php'" type="button">Announcement</button>
         <button onclick="location.href='http://localhost/project/sHomepage/logout.php'" type="button">Logout</button>
 

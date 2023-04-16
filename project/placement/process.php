@@ -8,7 +8,7 @@ $jid = $_POST['jid'];
 $date = $_POST['date'];
 $ctc = $_POST['ctc'];
 
-$query = "select name from jobpost where jid='$jid'";
+$query = "select cid from jobpost where jid='$jid'";
 
 $result = mysqli_query($connect2, $query);
 

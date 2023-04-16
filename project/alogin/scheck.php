@@ -7,13 +7,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Check</title>
     <style>
-        table,
+        /* table,
         tr,
         th,
         td {
             border: 1px solid black;
             text-align: center;
+        } */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 30px;
         }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            transition: all 0.3s ease;
+        }
+
+        th {
+            background-color: #f1f1f1;
+            font-weight: bold;
+        }
+
+        tr:hover {
+            background-color: #ff6961;
+            color: #fff;
+        }
+
+        /* tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even):hover {
+            background-color: #ffd1dc;
+            color: #fff;
+        } */
     </style>
 </head>
 <?php

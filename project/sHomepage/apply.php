@@ -17,10 +17,11 @@ if (mysqli_num_rows($result) > 0) {
     echo "<a href='http://localhost/project/sHomepage/jobpost.php'>Go Back!</a> ";
 } else {
 
-    $query = "select * from placement where roll=$roll";
+    $query = "select * from placement where roll='$roll'";
     $result = mysqli_query($connect3, $query);
     $oldctc = 0;
     $insert = true;
+    echo mysqli_error($connect3);
 
     if (mysqli_num_rows($result) > 0) {
 

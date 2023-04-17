@@ -1,7 +1,7 @@
 <?php
 
-$database = $_POST['gender'];
-$connect = mysqli_connect('localhost', 'root', '', $database);
+// $database = $_POST['gender'];
+$connect = mysqli_connect('localhost', 'root', '', 'tpcportal');
 $query = $_POST['query'];
 
 $result = mysqli_query($connect, $query);

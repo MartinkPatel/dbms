@@ -86,7 +86,7 @@
     $jobid = $connect->insert_id;
     echo "Your Job id is: " . $jobid;
     echo "<br>";
-    echo "<a href='index.php
+    echo "<a href='http://localhost/project/clogin/chomepage.php
     '>Go to HomePage</a> ";
 
     ?>

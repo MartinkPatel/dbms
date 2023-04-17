@@ -1,2 +1,2 @@
 <?php
-$connect = mysqli_connect('localhost', 'root', '', 'company');
+$connect = mysqli_connect('localhost', 'root', '', 'tpcportal');

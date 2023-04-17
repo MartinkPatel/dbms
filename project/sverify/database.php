@@ -1,2 +1,2 @@
 <?php
-$connect = mysqli_connect('localhost', 'root', '', 'student');
+$connect = mysqli_connect('localhost', 'root', '', 'tpcportal');

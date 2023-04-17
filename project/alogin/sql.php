@@ -18,11 +18,11 @@
 
         <label for="query">Query</label>
         <input type="text" name="query" required>
-        <label>Database:</label>
-        <input type="radio" id="m" value="student" name="gender" checked="checked"><label for="m" class="light">student</label><br>
+        <!-- <label>Database:</label> -->
+        <!-- <input type="radio" id="m" value="student" name="gender" checked="checked"><label for="m" class="light">student</label><br>
         <input type="radio" id="f" value="company" name="gender"><label for="f" class="light">company</label><br>
         <input type="radio" id="n" value="placement" name="gender"><label for="n" class="light">placement</label><br>
-        <input type="radio" id="n" value="admin" name="gender"><label for="n" class="light">admin</label><br>
+        <input type="radio" id="n" value="admin" name="gender"><label for="n" class="light">admin</label><br> -->
         <!-- <input type="radio" id="n" value="placement" name="gender"><label for="n" class="light">None Of The</label><br> -->
         <button type="submit" name="submit"> Run Query</button>
 

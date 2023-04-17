@@ -56,8 +56,7 @@
 
 				<button type="submit" value="submit">Update Details</button>
 		</form>
-		<button onclick="alert('Click here to go there!'); window.location.href = '\project\alumlogin\alumnilogin.php'">Click Me</button>
-
+	
 
 	</body>
 

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 17, 2023 at 07:10 AM
+-- Generation Time: Apr 17, 2023 at 07:29 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.0.25
 
@@ -142,7 +142,7 @@ INSERT INTO `announcement` (`aid`, `name`, `date`, `msg`) VALUES
 (1, 'admin', '2023-04-15', 'test 0'),
 (2, 'admin', '2023-04-15', 'test 0'),
 (3, 'admin2', '2023-04-07', 'test 1'),
-(4, 'admin2', '2023-04-07', 'test 1');
+(5, 'admin', '2023-04-17', 'test 5');
 
 -- --------------------------------------------------------
 
@@ -216,7 +216,9 @@ CREATE TABLE `jobpost` (
 --
 
 INSERT INTO `jobpost` (`jid`, `cid`, `name`, `phone`, `email`, `position`, `branch`, `minq`, `minm`, `moi`, `toi`, `ctc`, `date`) VALUES
-(34, 4, 'Martin', 2147483647, 'mkp@gmail.com', 'sdsdsdsdds', ' , CSE , MNC , EEE , ME , MME', 1, 1, 'offline', 'Written', 88, '2023-04-15');
+(34, 4, 'Martin', 2147483647, 'mkp@gmail.com', 'sdsdsdsdds', ' , CSE , MNC , EEE , ME , MME', 1, 1, 'offline', 'Written', 88, '2023-04-15'),
+(35, 4, 'Adobe2', 2147483647, 'mkp2@gmail.com', 'dev2', ' , AIDS , MNC', 7, 5, 'offline', 'Written', 99, '2023-04-17'),
+(36, 4, 'adobe3', 2147483647, 'mkp3@gmail.com', 'sdsd', ' , CSE', 7, 4, 'offline', 'Written', 5, '2023-04-17');
 
 -- --------------------------------------------------------
 
@@ -231,6 +233,13 @@ CREATE TABLE `placement` (
   `ctc` float NOT NULL,
   `date` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `placement`
+--
+
+INSERT INTO `placement` (`jid`, `roll`, `cid`, `ctc`, `date`) VALUES
+(34, '2101CS43', 4, 55, '2023-04-17');
 
 -- --------------------------------------------------------
 
@@ -258,7 +267,7 @@ CREATE TABLE `student` (
 --
 
 INSERT INTO `student` (`roll`, `name`, `dob`, `specialization`, `phone`, `email`, `password`, `gender`, `ccpi`, `aoi`, `bio`, `verify`) VALUES
-('2101CS43', 'Martin', '2023-04-01', 'CSE', 2147483647, 'mkp@gmail.com', '1234', 'm', 1, 'sdsdds', '                ada                ', 1),
+('2101CS43', 'MartinP', '2023-04-01', 'CSE', 2147483647, 'mkp@gmail.com', '1234', 'm', 10, '                sdsdds                ', '                sdsdds                ', 1),
 ('2101CS69', 'Sahil', '2023-03-29', 'CSE', 2147483647, 'skasdssk@gmail.com', 'Sahil@1234', 'm', 8, '                                sdsd                                ', '                                sdsd                                ', 1),
 ('2101ss44', 'asdss', '2023-04-05', 'CSE', 2147483647, 'mjp@gmail.com', 'Admin@1234', 'm', 9, '                                sdsdsdsd                                ', '                                sdsdsdsd                                ', 1);
 
@@ -332,7 +341,7 @@ ALTER TABLE `student`
 -- AUTO_INCREMENT for table `announcement`
 --
 ALTER TABLE `announcement`
-  MODIFY `aid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `aid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `company`
@@ -344,7 +353,7 @@ ALTER TABLE `company`
 -- AUTO_INCREMENT for table `jobpost`
 --
 ALTER TABLE `jobpost`
-  MODIFY `jid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `jid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
 -- Constraints for dumped tables

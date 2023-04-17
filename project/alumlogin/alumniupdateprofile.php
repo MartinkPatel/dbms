@@ -26,219 +26,37 @@
 
 	<body>
 
-		<form action="alumniprocess.php" method="post">
+		<form action="alumniprocess2.php" method="post">
 
-			<h1>Alumni Registration</h1>
+			<h1>Alumni Work Details </h1>
 
 			<fieldset>
-				<legend><span class="number">1</span>Your basic info</legend>
+				<legend><span class="number">1</span>Your Current Work Info</legend>
 
-				<label for="name">Name:</label>
-				<input type="text" id="name" name="name" required>
-				<label for="dob">Date Of Birth:</label>
-				<input type="date" id="dob" name="dob" required>
-
-				<label>Gender:</label>
-				<input type="radio" id="m" value="m" name="gender" checked="checked"><label for="m" class="light">Male</label><br>
-				<input type="radio" id="f" value="f" name="gender"><label for="f" class="light">Female</label><br>
-				<input type="radio" id="n" value="n" name="gender"><label for="n" class="light">None Of The</label><br>
-
-				<label for="specialization">Specialization:</label>
-				<!-- <input type="text" id="branch" name="branch" required> -->
-				<!-- <label for="basics">Branch:</label> -->
-				<select id="specialization" name="specialization">
-					<option value="CSE">CSE</option>
-					<option value="AIDS">AIDS</option>
-					<option value="MNC">MNC</option>
-					<option value="EEE">EEE</option>
-					<option value="ME">ME</option>
-					<option value="CE">CE</option>
-					<option value="PH">PH</option>
-					<option value="MME">MME</option>
-
-				</select>
+				<label for="ctc">CTC:</label>
+				<input type="text" id="ctc" name="ctc" required>
+				<label for="area">Area:</label>
+				<input type="text" id="area" name="area" required>
 
 
 
-				<label for="mobile">Mobile No:</label>
-				<input type="text" id="mobile" name="mobile" pattern=".{5,10}" required title="Max 10 digits are allowed">
+				<label for="position ">Position:</label>
+				<input type="text" id="position" name="position" required>
 
-				<label for="mail">Email:</label>
-				<input type="email" id="mail" name="email" required>
+				<label for="location">Location:</label>
+				<input type="text" id="location" name="location" required>
 
+        <label for="tenure">Tenure:</label>
+				<input type="text" id="tenure" name="tenure" required>
 
-				<label for="password">Password:</label>
-				<input type="password" id="password" name="password">
-				<label for="cnfpassword">Confirm Password:</label>
-				<input type="password" id="cnfpassword" name="cnfpassword">
 
 			</fieldset>
 
-			<!-- <fieldset>
-				<legend><span class="number">2</span>Your Skills(Rate Yourself)</legend>
-				<label for="skills">C:</label>
-				<select id="c" name="c">
-					<option value="0">0</option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-					<option value="6">6</option>
-					<option value="7">7</option>
-					<option value="8">8</option>
-					<option value="9">9</option>
-					<option value="10">10</option>
-
-				</select>
 
 
-				<label for="skills">C++:</label>
-				<select id="cpp" name="cpp">
-					<option value="0">0</option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-					<option value="6">6</option>
-					<option value="7">7</option>
-					<option value="8">8</option>
-					<option value="9">9</option>
-					<option value="10">10</option>
-
-				</select>
-
-
-				<label for="skills">Data Structures:</label>
-				<select id="ds" name="ds">
-					<option value="0">0</option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-					<option value="6">6</option>
-					<option value="7">7</option>
-					<option value="8">8</option>
-					<option value="9">9</option>
-					<option value="10">10</option>
-
-				</select>
-
-
-				<label for="skills">Java:</label>
-				<select id="java" name="java">
-					<option value="0">0</option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-					<option value="6">6</option>
-					<option value="7">7</option>
-					<option value="8">8</option>
-					<option value="9">9</option>
-					<option value="10">10</option>
-
-				</select>
-
-
-				<label for="skills">Python:</label>
-				<select id="python" name="python">
-					<option value="0">0</option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-					<option value="6">6</option>
-					<option value="7">7</option>
-					<option value="8">8</option>
-					<option value="9">9</option>
-					<option value="10">10</option>
-
-				</select>
-
-
-				<label for="skills">Database Management System:</label>
-				<select id="dbms" name="dbms">
-					<option value="0">0</option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-					<option value="6">6</option>
-					<option value="7">7</option>
-					<option value="8">8</option>
-					<option value="9">9</option>
-					<option value="10">10</option>
-
-				</select>
-
-
-				<label for="skills">Algorithm:</label>
-				<select id="ada" name="ada">
-					<option value="0">0</option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-					<option value="6">6</option>
-					<option value="7">7</option>
-					<option value="8">8</option>
-					<option value="9">9</option>
-					<option value="10">10</option>
-
-				</select>
-
-
-				<label for="skills">Operating System:</label>
-				<select id="os" name="os">
-					<option value="0">0</option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-					<option value="6">6</option>
-					<option value="7">7</option>
-					<option value="8">8</option>
-					<option value="9">9</option>
-					<option value="10">10</option>
-
-				</select>
-
-
-			</fieldset> -->
-
-			<fieldset>
-				<legend><span class="number">2</span>Academics</legend>
-
-				<label for="cpi">CPI you passed out with:</label>
-				<input type="number" step="any" id="cpi" name="cpi" min="0" max="10" required>
-
-				<label for="passout">Graduation Year</label>
-				<input type="number" step="any" id="passout" name="passout" min="0" max="2030" required>
-
-
-
-
-
-
-				<fieldset>
-
-					<legend><span class="number">3</span>About Yourself</legend>
-
-					<label for="bio">Bio:</label>
-					<textarea id="bio" name="bio"></textarea>
-				</fieldset>
-
-				<button type="submit" value="submit">Sign Up</button>
+				<button type="submit" value="submit">Update Details</button>
 		</form>
-		<button onclick="alert('Click here to go there!'); window.location.href = '\project\alumnilogin.php'">Click Me</button>
+		<button onclick="alert('Click here to go there!'); window.location.href = '\project\alumlogin\alumnilogin.php'">Click Me</button>
 
 
 	</body>

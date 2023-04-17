@@ -44,9 +44,7 @@
 
 
         <button onclick="location.href='http://localhost/project/alumlogin/alumniprofile.php'" type="button">Check Your Profile</button>
-        <button onclick="location.href='http://localhost/project/alumlogin/alumniprofile.php'" type="button">Add Work Details</button>
-        <button onclick="location.href='http://localhost/project/alumlogin/alumniprofile.php'" type="button">Update Work Details</button>
-        <button onclick="location.href='http://localhost/project/alumlogin/alumniupdateprofile.php'" type="button">Update Profile</button>
+        <button onclick="location.href='http://localhost/project/alumlogin/alumniupdateprofile.php'" type="button">Add/Update Work Details</button>
 
 
 

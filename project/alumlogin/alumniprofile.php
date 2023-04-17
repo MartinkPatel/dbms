@@ -120,7 +120,7 @@
                 </textarea>
             </fieldset>
 
-            <button onclick="location.href='http://localhost/project/alumlogin/alumnihomepage.php/'" type="button">Homepage</button>
+            <button onclick="location.href='http://localhost/project/alumlogin/alumnihomepage.php'" type="button">Homepage</button>
 
     </form>
 

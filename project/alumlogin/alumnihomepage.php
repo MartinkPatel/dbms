@@ -36,7 +36,7 @@
     ?>
 
 
-    <h1>Welcome to Homepage</h1>
+    <h1>Welcome to IIT Patna ALUMINI PORTAL</h1>
 
     <fieldset>
         <p>Name: <?php echo $name ?></p>
@@ -45,6 +45,9 @@
 
         <button onclick="location.href='http://localhost/project/alumlogin/alumniprofile.php'" type="button">Check Your Profile</button>
         <button onclick="location.href='http://localhost/project/alumlogin/alumniupdateprofile.php'" type="button">Add/Update Work Details</button>
+        <button onclick="location.href='http://localhost/project/alumlogin/work.php'" type="button">Work History Details</button>
+        <button onclick="location.href='http://localhost/project/alumlogin/logout.php'" type="button">Logout</button>
+
 
 
 

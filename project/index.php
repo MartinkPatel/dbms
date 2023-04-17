@@ -19,6 +19,8 @@
 				<li><a href="alogin/">Admin Login</a></li>
 				<li><a href="sRegister/">Student Registration</a></li>
 				<li><a href="cRegister/">Company Registration</a></li>
+				<li><a href="alumlogin/alumnilogin.php">Alumni</a></li>
+
 			</ul>
 		</nav>
 	</header>

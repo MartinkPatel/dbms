@@ -32,7 +32,8 @@
 
 			<fieldset>
 				<legend><span class="number">1</span>Your Current Work Info</legend>
-
+				<label for="company">Company:</label>
+				<input type="text" id="company" name="company" required>
 				<label for="ctc">CTC:</label>
 				<input type="text" id="ctc" name="ctc" required>
 				<label for="area">Area:</label>
@@ -46,7 +47,7 @@
 				<label for="location">Location:</label>
 				<input type="text" id="location" name="location" required>
 
-        <label for="tenure">Tenure:</label>
+				<label for="tenure">Tenure:</label>
 				<input type="text" id="tenure" name="tenure" required>
 
 
@@ -54,9 +55,11 @@
 
 
 
-				<button type="submit" value="submit">Update Details</button>
+			<button type="submit" value="submit">Update Details</button>
+			<p class="top"><a href="alumnihomepage.php">Go Back!</a>
+
 		</form>
-	
+
 
 	</body>
 

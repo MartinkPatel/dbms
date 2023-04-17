@@ -238,7 +238,7 @@
 
 				<button type="submit" value="submit">Sign Up</button>
 		</form>
-		<button onclick="alert('Click here to go there!'); window.location.href = '\project\alumnilogin.php'">Click Me</button>
+		<p class="top">Already Registered? <a href="alumnilogin.php">Login</a>
 
 
 	</body>

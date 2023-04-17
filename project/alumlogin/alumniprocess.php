@@ -60,7 +60,7 @@ if (mysqli_num_rows($result) > 0) {
 				$row = mysqli_fetch_row($result);
 				echo "Your ID is: " . $row[0];
 			}
-			echo "<br><a href=\"\project\alumnilogin.php\">Login</a>";
+			echo "<br><a href=\"\project\alumlogin\alumnilogin.php\">Login</a>";
 		} else {
 			echo "Organisation NOT Added<br />";
 			echo mysqli_error($connect);

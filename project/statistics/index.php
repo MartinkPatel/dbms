@@ -73,9 +73,11 @@ li:hover {
         <button onclick=location.href="http://localhost/project/statistics/squery.php" type='button'>Detailed statistics</button>
     <br>
     <br>
+        <button onclick=location.href="http://localhost/project/statistics/branch.php" type='button'>View Branch Wise Trends</button>
+    <br>
+    <br>
         <button onclick=location.href="http://localhost/project/" type='button'>Go to Homepage</button>
     </center>
 </body>
 
 </html>
-

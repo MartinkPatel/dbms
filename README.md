@@ -1,12 +1,11 @@
 # dbms
 TPC Portal
 
+main folder- project
 
-company.company
-![image](https://user-images.githubusercontent.com/94983670/231472619-95fcc86b-b95d-4e33-91ea-1015be8e62a6.png)
+Copy project to c/xaamp/htdocs/
 
-student.student
-![image](https://user-images.githubusercontent.com/94983670/231472917-336d39e3-caf3-4f8d-960b-9eabe9b331b4.png)
+SQL DATABASE NAME- tpcportal
 
-student.acad
-![image](https://user-images.githubusercontent.com/94983670/231473054-f53f116f-38e6-4cdc-8093-48ccb329c24a.png)
+Import- tpcportal.sql for structure and foriegn checks
+tpcportal_fakedata.sql for checking stats as its genrated using python

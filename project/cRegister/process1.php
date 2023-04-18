@@ -57,7 +57,7 @@ if (mysqli_num_rows($result) > 0) {
 				$row = mysqli_fetch_row($result);
 				echo "Your ID is: " . $row[0];
 			}
-			echo "<br><a href=\"\Placement_Portal\Company_Login\index.php\">Login</a>";
+			echo "<br><a href='http://localhost/project/clogin/index3.php'>Login</a>";
 		} else {
 			echo "Organisation NOT Added<br />";
 			echo mysqli_error($connect);

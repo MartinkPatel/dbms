@@ -28,7 +28,7 @@
 	<section class="landing">
 		<h1>Welcome to IIT Patna Placement Portal</h1>
 		<p>Find the best opportunities for your career with us</p>
-		<a href="#" class="btn">Explore</a>
+		<a href="http://localhost/project/statistics/" class="btn">Explore</a>
 	</section>
 
 	<footer>

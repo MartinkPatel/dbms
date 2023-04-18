@@ -99,11 +99,14 @@
 
         if ($row['minq'] > $csem) {
             $show = false;
+            //   echo $jid . " k  " . $show . " csem= " . $csem . " minq= " . $row["minq"] . "<br>";
         }
 
         if ($row['minm'] > $ccpi) {
             $show = false;
         }
+
+
 
 
 

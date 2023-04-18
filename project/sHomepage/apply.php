@@ -39,6 +39,7 @@ if (mysqli_num_rows($result) > 0) {
     if ($insert == true) {
         $query = "insert into application (jid,roll,date) values ('$jid','$roll','$date')";
         $result = mysqli_query($connect2, $query);
+        echo mysqli_error($connect2);
 
         echo "Successfully Registered!<br>";
     } else {
